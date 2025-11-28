@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            margin: 0;
+            padding: 20px;
+        }
+        #container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 3px solid navy;
+            margin-bottom: 30px;
+        }
+        #logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        #logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .header-text {
+            flex: 1;
+            text-align: center;
+        }
+        .judul-univ {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 2px 0;
+        }
+        .alamat {
+            font-size: 11px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        #judul {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 25px 0;
+            text-decoration: underline;
+        }
+        .baris {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        .label {
+            width: 130px;
+            font-size: 13px;
+            padding-top: 5px;
+        }
+        .titik {
+            width: 20px;
+            padding-top: 5px;
+        }
+        .input {
+            padding: 5px;
+            border: 1px solid #999;
+            font-size: 13px;
+        }
+        .input-panjang {
+            width: 400px;
+        }
+        .input-textarea {
+            width: 400px;
+            height: 60px;
+        }
+        .input-pendek {
+            width: 150px;
+        }
+        #tombol {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 6px 20px;
+            margin: 0 5px;
+            background: #e0e0e0;
+            border: 1px solid #999;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="LogoUNINDRA.png" alt="Logo UNINDRA">
+            </div>
+            <div class="header-text">
+                <div class="judul-univ">UNIVERSITAS INDRAPRASTA PGRI</div>
+                <div class="judul-univ">(UNINDRA)</div>
+                <div class="alamat">Jl. Nangka No.58 Tanjung Barat - Jakarta</div>
+            </div>
+        </div>
+        <div id="judul">BIODATA MAHASISWA</div>
+        <form>
+            <div class="baris">
+                <div class="label">NAMA</div>
+                <div class="titik">:</div>
+                <input type="text" class="input input-panjang">
+            </div>
+            <div class="baris">
+                <div class="label">ALAMAT</div>
+                <div class="titik">:</div>
+                <textarea class="input input-textarea"></textarea>
+            </div>
+            <div class="baris">
+                <div class="label">TANGGAL LAHIR</div>
+                <div class="titik">:</div>
+                <input type="text" class="input input-pendek" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="baris">
+                <div class="label">TELP</div>
+                <div class="titik">:</div>
+                <input type="text" class="input input-panjang">
+            </div>
+            <div class="baris">
+                <div class="label">EMAIL</div>
+                <div class="titik">:</div>
+                <input type="email" class="input input-panjang">
+            </div>
+            <div id="tombol">
+                <button type="submit" class="btn">SIMPAN</button>
+                <button type="reset" class="btn">BATAL</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
